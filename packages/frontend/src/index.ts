@@ -56,30 +56,20 @@ export const init = (sdk: FrontendSDK) => {
   //   }
   // })
 
-  sdk.commands.register("race-single", {
-    name: "Race Condition Caido Single Packets Attack",
-    run: (context) => {
-      return sdk.backend.raceSinglePacket(context)
-        .then((result) => {
-          // lastRequestResult.value = result; // <-- Atualiza o estado global
-          return result;
-        });
-    }
-  })
   // sdk.commands.register("race-single", {
   //   name: "Race Condition Caido Single Packets Attack",
-  //   run: (context) => sdk.backend.raceSinglePacket(context)
+  //   run: (context) => {
+  //     return sdk.backend.raceSinglePacket(context)
+  //       .then((result) => {
+  //         // lastRequestResult.value = result; // <-- Atualiza o estado global
+  //         return result;
+  //       });
+  //   }
   // })
-  sdk.menu.registerItem({
-    type: "Request",
-    commandId: "race-paralela",
-    // leadingIcon: "fas fa-hand",
-  });
-  sdk.menu.registerItem({
-    type: "RequestRow",
-    commandId: "race-paralela",
-    // leadingIcon: "fas fa-hand",
-  });
+  sdk.commands.register("race-single", {
+    name: "Race Condition Caido Single Packets Attack",
+    run: (context) => sdk.backend.raceSinglePacket(context)
+  })
 
   sdk.menu.registerItem({
     type: "Request",
@@ -93,5 +83,5 @@ export const init = (sdk: FrontendSDK) => {
   });
 
   // Add a sidebar item
-  sdk.sidebar.registerItem("Race Condition", "/rc");
+  // sdk.sidebar.registerItem("Race Condition", "/rc");
 };

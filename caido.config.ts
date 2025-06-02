@@ -10,11 +10,11 @@ import prefixwrap from "postcss-prefixwrap";
 const id = "frontend-vue";
 export default defineConfig({
   id,
-  name: "Frontend Vue",
-  description: "Plugin template with frontend using VueJS",
-  version: "0.0.0",
+  name: "Race Condtion Plugin",
+  description: "It was a plugin which explores Race Condtion attack",
+  version: "0.0.1",
   author: {
-    name: "Caido Labs Inc.",
+    name: "F0x (Mateus Tesser)",
     email: "dev@caido.io",
     url: "https://caido.io",
   },
