@@ -29,7 +29,7 @@ async function cmdExec(child) {
 }
 
 const raceSinglePacket = async (sdk: SDK, context: CommandContext) => {
-  if (context.type !== "RequestContext" || !context.request.id) {
+  if (context.type !== "RequestContext" || context.type !== "RequestRowContext" || !context.request.id) {
     sdk.console.log("raceSinglePacket: Invalid context type or missing request ID.");
   }
   const req = await sdk.requests.get(context.request.id);

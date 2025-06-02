@@ -1,11 +1,5 @@
-# VueJS Frontend Template
-
-This template should be used as a starting point for creating a new plugin with a VueJS frontend.
-
-## Features
-
-- [pnpm](https://pnpm.io/) as package manager
-- [TypeScript](https://www.typescriptlang.org/)
-- [VueJS](https://vuejs.org/)
-- [PrimeVue](https://primevue.org/) for UI components
 # Race-Condition-Caido
+
+This is a plugin developed to exploit Race Condition Caido with Single Request
+
+Is a alpha version of plugin if found any trouble, please do a Pull Request or an Issue
